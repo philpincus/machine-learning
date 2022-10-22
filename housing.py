@@ -37,11 +37,23 @@ def load_housing_data(housing_path=HOUSING_PATH):
     return pd.read_csv(csv_path)
 
 
-# In[8]:
+# In[9]:
 
 
 # eda
 
 housing = load_housing_data()
-housing.head()
+
+
+# In[13]:
+
+
+# housing.head()
+# housing.info()
+# housing["ocean_proximity"].value_counts()
+# housing.describe()
+
+import matplotlib.pyplot as plt
+housing.hist(bins=50, figsize=(20,15))
+plt.show()
 
