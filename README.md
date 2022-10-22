@@ -1,5 +1,5 @@
 # machine-learning
-Hands-On Machine Learning with Scikit-Learn, Keras &amp; TensorFlow
+hands-on machine learning with scikit-learn, keras &amp; tensorflow
 
 # creating and activating an isolated environment
 $ python3 -m pip install --user -U virtualenv
@@ -14,3 +14,6 @@ $ python3 -m ipykernel install --user --name=python3
 
 # open jupyter notebook
 $ jupyter notebook
+
+# convert json ipython notebook (.ipynb) to .py file
+$ jupyter nbconvert --to script housing.ipynb
